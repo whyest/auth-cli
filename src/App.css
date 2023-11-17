@@ -1,0 +1,95 @@
+.mainContainer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  font-weight: bold;
+  color: #1e293b;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #334155;
+}
+
+.resultContainer,
+.historyItem {
+  flex-direction: row;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyContainer {
+  flex-direction: column;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  flex-grow: 5;
+  justify-content: flex-start;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputContainer > .errorLabel {
+  color: #e11d48;
+  font-size: 12px;
+}
+
+.inputBox {
+  height: 48px;
+  width: 400px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #9ca3af;
+  padding-left: 8px;
+}
+
+.rotator:before {
+  content: 'TRANSITIONS';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: arial;
+  /* color: #1b1464; */
+  color: #0369a1;
+  -webkit-animation: word-switch 5s infinite;
+  animation: word-switch 5s infinite;
+}
+
+@-webkit-keyframes word-switch {
+  0% {
+    content: 'введи почту';
+  }
+
+  50% {
+    content: 'введи логин';
+  }
+
+  100% {
+    content: 'авторизуйся';
+  }
+}
